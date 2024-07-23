@@ -8,6 +8,7 @@ function App() {
 				<a href="https://www.digitalproductschool.io/" target="_blank">
 					<img src={dpsLogo} className="logo" alt="DPS logo" />
 				</a>
+				tyqgwyq
 			</div>
 			<div className="home-card">
 				<p>Your solution goes here 😊</p>
