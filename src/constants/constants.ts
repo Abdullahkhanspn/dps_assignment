@@ -1,0 +1,1 @@
+export const USER_DETAIL_URL = 'https://dummyjson.com/users';
