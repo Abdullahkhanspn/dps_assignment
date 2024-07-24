@@ -7,6 +7,11 @@ export interface User {
 	};
 }
 
+export interface ControlProps {
+	allUsers: User[];
+	setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>;
+}
+
 export interface UserDetailProps {
 	userData: User[];
 	highlightOldest: boolean;
@@ -16,4 +21,9 @@ export interface UserDetailListProps {
 	userData: User[];
 	loading: boolean;
 	highlightOldest: boolean;
+}
+
+export interface SearchProps {
+	allUsers: User[];
+	setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>;
 }

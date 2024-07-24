@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import UserDetailList from './components/UserDetailList';
 import { USER_DETAIL_URL } from './constants/constants';
-import { User } from './types/types';
+import { User } from './types/types'; 
+import Control from './components/Control';
 
 function App() {
 	const [allUsers, setAllUsers] = useState<User[]>(  []   );
@@ -32,6 +33,10 @@ function App() {
 
 	return (
 		<main className="w-full h-screen px-10 pb-4 pt-10">
+			<Control
+				allUsers={allUsers}
+				setFilteredUsers={setFilteredUsers}
+			/>
 			<UserDetailList
 				userData={filteredUsers}
 				loading={loading}
