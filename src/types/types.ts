@@ -27,3 +27,8 @@ export interface SearchProps {
 	allUsers: User[];
 	setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>;
 }
+
+export interface CitySelectProps {
+	allUsers: User[];
+	setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>;
+}

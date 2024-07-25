@@ -4,11 +4,11 @@ import { SearchProps } from '../types/types';
 const Search: React.FC<SearchProps> = ({ allUsers, setFilteredUsers }) => {
 	const [searchTerm, setSearchTerm] = useState('');
 
-	/*useEffect(() => {
+	useEffect(() => {
 		const timeoutId = setTimeout(() => {
 			const filteredUsers = allUsers.filter((user) => {
 				const fullName =
-					${user.firstName} ${user.lastName}.toLowerCase();
+					`${user.firstName} ${user.lastName}`.toLowerCase();
 				return fullName.includes(searchTerm.toLowerCase());
 			});
 			console.log(filteredUsers);
@@ -16,7 +16,7 @@ const Search: React.FC<SearchProps> = ({ allUsers, setFilteredUsers }) => {
 		}, 300);
 
 		return () => clearTimeout(timeoutId);
-	}, [searchTerm, allUsers, setFilteredUsers]); */
+	}, [searchTerm, allUsers, setFilteredUsers]);
 
 	function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
 		setSearchTerm(e.target.value);		
