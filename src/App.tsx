@@ -36,6 +36,8 @@ function App() {
 			<Control
 				allUsers={allUsers}
 				setFilteredUsers={setFilteredUsers}
+				highlightOldest={highlightOldest}
+				setHighlightOldest={setHighlightOldest}
 			/>
 			<UserDetailList
 				userData={filteredUsers}

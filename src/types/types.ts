@@ -10,6 +10,8 @@ export interface User {
 export interface ControlProps {
 	allUsers: User[];
 	setFilteredUsers: React.Dispatch<React.SetStateAction<User[]>>;
+	highlightOldest: boolean;
+	setHighlightOldest: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface UserDetailProps {
